@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+</head>
+<body>
+    <h1>Image Processing</h1>
+    <form action="/" method="POST" enctype="multipart/form-data"> 
+        <label for="images">Select Images:</label><br>
+        <input type="file" id="images" name="images" multiple><br>
+        <label for="operation">Select Operation:</label><br>
+        <select id="operation" name="operation">
+            <option value="edge_detection">Edge Detection</option>
+            <option value="color_inversion">Color Inversion</option>
+        </select><br><br>
+        <input type="submit" value="Process Images">
+    </form>
+</body>
+</html>
